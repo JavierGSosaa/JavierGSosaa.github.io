@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Order functionality</title>
+<!--This is the alert Script HTML-->
+<script>
+    alert("Welcome to the Website,Please choose something to order:")
+</script>
+<!--Info Gathering of the User-->
+<script>
+var name;
+now= new Date();
+hour= now.getHours();
+name=window.prompt("Please enter your name"," Enter your Name Here");
+if(hour<12){
+    document.write("<h1>Good Morning ",name,"</h1>");
+}else if(hour<18){
+    document.write("<h1>Good Afternoon ",name,"</h1>");
+}else {
+     document.write("<h1>Good Evening ",name,"</h1>");
+}
+
+</script>
+</head>
+<body>
+<p>These are the items available for sale(only 1 set per Order)</p>
+<ol type="1">
+  <li>Bike</li>
+  <li>Guitar</li>
+  <li>American Psycho</li>
+  <li>Jacket</li>
+  <li>Sweater</li>
+</ol>
+<!--Item Name order-->
+<label for="ItemName">Which item would you like to order?</label>
+<input type="text" id="ItemName">
+<button onclick="Finalresult()">Submit</button><br>
+<!--Order size number-->
+<label for="ordersize">How many are you ordering(Max is 99)</label>
+<input type="number" id="ordersize">
+<button onclick="Finalresult()">Submit</button><br>
+
+<!--Arrival Date Function-->
+<script>
+    function DateArrival(){
+        return parseInt(now.getDate())+7;
+    }
+</script>
+<p id="result">Date to be Determined</p>
+<!--Information laid out-->
+<script>
+    function Finalresult(){
+    let item = document.getElementById("ItemName").value;
+    let amount = document.getElementById("ordersize").value;
+    if (item != "Bike" && item != "Guitar" && item != "American Psycho" && item != "Jacket" && item != "Sweater") {
+        alert("The item that you typed isn't on here, try again.");
+        return;
+    }else if(amount > 99 || amount < 1){
+        alert("Invalid amount! You can only order between 1 and 99.");
+        return;
+    }
+    if(DateArrival()%10==1){
+        document.getElementById("result").innerHTML = "You ordered " + amount + " of " + item + ", it will arrive on " + DateArrival() + "st";
+    }else if(DateArrival()%10==2){
+        document.getElementById("result").innerHTML = "You ordered " + amount + " of " + item + ", it will arrive on " + DateArrival() + "nd";
+    }else if(DateArrival()%10==3){
+         document.getElementById("result").innerHTML = "You ordered " + amount + " of " + item + ", it will arrive on " + DateArrival() + "rd";
+    }else 
+         document.getElementById("result").innerHTML = "You ordered " + amount + " of " + item + ", it will arrive on " + DateArrival() + "th";
+    }
+</script>
+
+</body>
+</html>
