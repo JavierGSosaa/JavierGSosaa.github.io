@@ -1,3 +1,44 @@
 .carousel-inner {
         height: 100vh; /* Or 100% or 80vh */
 }
+
+body{
+      font-family: "FOT-SkipStdB";
+}
+
+.btn-outline-success {
+    color: #8AB5BF;
+    background-color: #3F61A6;
+    background-image: none;
+    border-color: #3F61A6;
+}
+
+.nav img{
+        margin-top: 10px;
+}
+
+nav{
+ background: #303E8C ;
+
+}
+.navbar-container {
+       display: flex;
+        justify-content: center;
+    }
+    
+a.navbar-brand{
+        color:#D5E7F2;  
+        font-family: "Quaternary Font";
+}
+
+.btn-outline-success {
+    color: #3F61A6;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3F61A6;
+}
+p.lead{
+       font-family:"FOT-スキップ Std B", SkipStd-B;
+        background-color: #D5E7F2;
+}
+
