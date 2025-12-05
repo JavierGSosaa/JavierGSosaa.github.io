@@ -6,197 +6,139 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 
-<body>
+  <body>
 <!--See if you can have background music played in the background played while searching-->
 <!--Have A search bar for any specific personas they wanna look for-->
 <!--Match the baby blue and white aesthic of the website,everything in white looks robo(title is robo,everything else is mordern),everything in blue is new and  polish -->
 <!--Have a Jumbotron to showcase the most popular Persona's or anything along those lines,honestly could use it for a what if customizatopn-->
 <!--Have it like a list and when you hover over the name it expands to show the image-->
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="" >
-    <img src="8e638e2559dad0bae9f3175141397204.jpg" width="55" height="80" class="d-inline-block align-top" alt="Home Icon">
-    Persona 3 Reload Compendium
-    <img src="sg-persona-3-reload-walkthrough-and-guide-1024x576.jpg" class="align-center" height="80">
-  </a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search for Persona Name" aria-label="Search">
-    </form>
-  </div>
-</nav>
+    <div class="container-fluid">
+       <a class="navbar-brand" href="P3R.html" alt="Home Icon"class="d-inline-block align-top"> D&D website</a>
+       <img src="dungeons-dragons-5th-edition-logo-png_seeklogo-517840.png" width="55" height="80" >
+       <img src="206-2060028_dungeons-and-dragons-5e-logo-hd-png-download.png" height="50" >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="navbar-brand nav-item" href="skill.html">Skill Search</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <!--carol and Jumbo maybe-->
 <div class="container-sm text-center"> 
   <div class="row align-items-start">
     <div class="col .col-xl-">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
   </ol>
-
   <div class="carousel-inner container-fluid">
-
     <div class="carousel-item active">
       <div class="imageContainer">
-        <img src="Guard-Inspo.webp" class="d-block w-100" alt="Main Slide">
+        <img src="Throne_room1-1-1.jpg" class="d-block w-100" alt="Main Slide">
       </div>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Main Persona</h5>
-        <p>Your description text goes here.</p>
+        <h5>Endless Athenaeum</h5>
+        <p>Library of Items & Information</p>
       </div>
     </div>
-
   </div>
 </div>
-
 </div> 
     <div class="col .col-xl-" >
       <div class="carousel-item active">
       <div class="imageContainer">
-        <img src="2pfxinfmmadc1.jpeg" class="d-block w-100" alt="Main Slide">
+        <img src="5e-fighter-guide.webp" class="d-block w-100" alt="Main Slide">
       </div>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Close Up</h5>
-        <p id="SecondPersona">Your description text goes here.</p>
+        <h5>All classes shown here</h5>
+        <p id="Create">For a more visual approach </p>
       </div>
+      </a>
     </div>
       </div>
   </div>
   </div>
-</div>
 <h3>
-P3R Table
-<small class="text-muted">All the personas may be found here </small>
+D&D Character List
+<small class="text-muted">Start classes here</small>
 </h3>
-    <table class="table table-bordered table-hover">
-  <thead>
+  <table class="table table-bordered table-hover">
+      <thead>
     <tr>
-      <th scope="col" onclick="SortLevel()">Base Level</th>
-      <th scope="col" onclick="SortLevel()">Name</th>
-      <th scope="col" onclick="SortLevel()">Arcana</th>
-      <th scope="col">Description</th>
-      <th scope="col">Image</th>
+      <th scope="col" onclick="NameSort()"style="cursor:pointer">Name</th>
+      <th scope="col" >Weapon</th>
+       <th scope="col" onclick="SortHit()" style="cursor:pointer;"> HitDie</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level0">Mark</td>
-      <td id="PName0">Otto</td>
-      <td id="Arcana0">@mdo</td>
-      <td id="BlobofWords0">extra stuff</td>
+      <td id="Name0">Mark</td>
+      <td id="Weapon0">Otto</td>
+      <td id="Hitdie0">@mdo</td>
+      
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level1">Mark</td>
-      <td id="PName1">Otto</td>
-      <td id="Arcana1">@mdo</td>
-      <td id="BlobofWords1">extra stuff</td>
+    
+      <td id="Name1">Mark</td>
+      <td id="Weapon1">Otto</td>
+      <td id="Hitdie1">@mdo</td>
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level2">Mark</td>
-      <td id="PName2">Otto</td>
-      <td id="Arcana2">@mdo</td>
-      <td id="BlobofWords2">extra stuff</td>
+      <td id="Name2">Mark</td>
+      <td id="Weapon2">Otto</td>
+      <td id="Hitdie2">@mdo</td>
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level3">Mark</td>
-      <td id="PName3">Otto</td>
-      <td id="Arcana3">@mdo</td>
-      <td id="BlobofWords3">extra stuff</td>
+      <td id="Name3">Mark</td>
+      <td id="Weapon3">Otto</td>
+      <td id="Hitdie3">@mdo</td>>
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level4">Mark</td>
-      <td id="PName4">Otto</td>
-      <td id="Arcana4">@mdo</td>
-      <td id="BlobofWords4">extra stuff</td>
+      <td id="Name4">Mark</td>
+      <td id="Weapon4">Otto</td>
+      <td id="Hitdie4">@mdo</td>
+
     </tr>
      <tr>
-      <th scope="row">1</th>
-      <td id="Level5">Mark</td>
-      <td id="PName5">Otto</td>
-      <td id="Arcana5">@mdo</td>
-      <td id="BlobofWords5">extra stuff</td>
+      <td id="Name5">Mark</td>
+      <td id="Weapon5">Otto</td>
+      <td id="Hitdie5">@mdo</td>
     </tr>
      <tr>
-      <th scope="row">1</th>
-      <td id="Level6">Mark</td>
-      <td id="PName6">Otto</td>
-      <td id="Arcana6">@mdo</td>
-      <td id="BlobofWords6">extra stuff</td>
+      <td id="Name6">Mark</td>
+      <td id="Weapon6">Otto</td>
+      <td id="Hitdie6">@mdo</td>
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level7">Mark</td>
-      <td id="PName7">Otto</td>
-      <td id="Arcana7">@mdo</td>
-      <td id="BlobofWords7">extra stuff</td>
+      <td id="Name7">Mark</td>
+      <td id="Weapon7">Otto</td>
+      <td id="Hitdie7">@mdo</td>
     </tr>
      <tr>
-      <th scope="row">1</th>
-      <td id="Level8">Mark</td>
-      <td id="PName8">Otto</td>
-      <td id="Arcana8">@mdo</td>
-      <td id="BlobofWords8">extra stuff</td>
+      <td id="Name8">Mark</td>
+      <td id="Weapon8">Otto</td>
+      <td id="Hitdie8">@mdo</td>
     </tr>
      <tr>
-      <th scope="row">1</th>
-      <td id="Level9">Mark</td>
-      <td id="PName9">Otto</td>
-      <td id="Arcana9">@mdo</td>
-      <td id="BlobofWords9">extra stuff</td>
+      <td id="Name9">Mark</td>
+      <td id="Weapon9">Otto</td>
+      <td id="Hitdie9">@mdo</td>
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level10">Mark</td>
-      <td id="PName10">Otto</td>
-      <td id="Arcana10">@mdo</td>
-      <td id="BlobofWords10">extra stuff</td>
+      <td id="Name10">Mark</td>
+      <td id="Weapon10">Otto</td>
+      <td id="Hitdie10">@mdo</td>
     </tr>
     <tr>
-      <th scope="row">1</th>
-      <td id="Level11">Mark</td>
-      <td id="PName11">Otto</td>
-      <td id="Arcana11">@mdo</td>
-      <td id="BlobofWords11">extra stuff</td>
+      <td id="Name11">Mark</td>
+      <td id="Weapon11">Otto</td>
+      <td id="Hitdie11">@mdo</td>
     </tr>
    <tr>
-      <th scope="row">1</th>
-      <td id="Level12">Mark</td>
-      <td id="PName12">Otto</td>
-      <td id="Arcana12">@mdo</td>
-      <td id="BlobofWords12">extra stuff</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td id="Level13">Mark</td>
-      <td id="PName13">Otto</td>
-      <td id="Arcana13">@mdo</td>
-      <td id="BlobofWords13">extra stuff</td>
-    </tr>
-   <tr>
-      <th scope="row">1</th>
-      <td id="Level14">Mark</td>
-      <td id="PName14">Otto</td>
-      <td id="Arcana14">@mdo</td>
-      <td id="BlobofWords14">extra stuff</td>
-    </tr>
-   <tr>
-      <th scope="row">1</th>
-      <td id="Level15">Mark</td>
-      <td id="PName15">Otto</td>
-      <td id="Arcana15">@mdo</td>
-      <td id="BlobofWords15">extra stuff</td>
-    </tr>
   </tbody>
 </table>
-<script src="PersonaInfo.js"></script>
+<script src="ClassesInfo.js"></script>
 </body>
 </html>
 

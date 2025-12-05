@@ -1,16 +1,17 @@
-.carousel-inner {
-        height: 100vh; /* Or 100% or 80vh */
+        table td {
+
+  vertical-align: middle;
 }
 
 body{
-      font-family: "FOT-SkipStdB";
+      font-family: "Palatino Linotype", Palatino, serif;
 }
 
 .btn-outline-success {
     color: #8AB5BF;
-    background-color: #3F61A6;
+    background-color: #000000;
     background-image: none;
-    border-color: #3F61A6;
+    border-color: #000000;
 }
 
 .nav img{
@@ -18,7 +19,7 @@ body{
 }
 
 nav{
- background: #303E8C ;
+ background: #FF2800 ;
 
 }
 .navbar-container {
@@ -41,4 +42,10 @@ p.lead{
        font-family:"FOT-スキップ Std B", SkipStd-B;
         background-color: #D5E7F2;
 }
+a{
+    color:#ffffff;
 
+}
+a.navbar-brand{
+    color:#ffffff;
+}
