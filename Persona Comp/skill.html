@@ -25,29 +25,25 @@
       </ul>
     </div>
   </nav>
-  <div class="container-sm mt-4">
-<ol class="list-group list-group-numbered" stye="max-width: 600px;">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Cras justo odio</li>
-</ol>
+  <div class="mt-3 text-center"style="width: 300px; margin: auto;">
+    <div class="input-group">
+      <input class="form-control" type="text" id="searchBar" placeholder="Enter a Skill">
+      <button type="button" onclick="search(document.getElementById('searchBar').value)">
+        Search
+      </button>
+    </div>
   </div>
-
+  <div class="dropdown mt-3">
+    <button class="btn btn-primary dropdown-toggle" id="dropDown" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Skills: A-Z</button>
+        
+      <ul class="dropdown-menu">
+        <button class="dropdown-item" type="button" onclick="SkillSortAZ()">Skills: A-Z</button>
+        <button class="dropdown-item" type="button" onclick="SkillSortZA()">Skills: Z-A</button>
+      </ul>             
+  </div>
+  <div class="container-sm mt-4">
+    <ol class="list-group list-group-numbered" stye="max-width: 600px;" id="skillList"></ol>
+  </div>
 <script src="skilllook.js"></script>
 </body>
 </html>
